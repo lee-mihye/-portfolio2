@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* core.css - 중요공통기능 */
+
+/*웹폰트*/
+@font-face {
+    /* NOTOSAN 100*/
+    font-family: NotoSan;
+    font-style: nomal;
+    font-weight: 100;
+    src: url(../fonts/noto_thin.woff) format("woff"),
+        url(../fonts/noto_thin.ttf) format("truetype");
+}
+
+@font-face {
+    /* NOTOSAN 100*/
+    font-family: NotoSan;
+    font-style: nomal;
+    font-weight: 200;
+    src: url(../fonts/noto_light.woff) format("woff"),
+        url(../fonts/noto_light.ttf) format("truetype");
+}
+
+@font-face {
+    /* NOTOSAN 300*/
+    font-family: NotoSan;
+    font-style: nomal;
+    font-weight: 300;
+    src: url(../fonts/noto_nomal.woff) format("woff"),
+        url(../fonts/noto_nomal.ttf) format("truetype");
+}
+
+@font-face {
+    /* NOTOSAN 400*/
+    font-family: NotoSan;
+    font-style: nomal;
+    font-weight: 400;
+    src: url(../fonts/noto-regular.woff) format("woff"),
+        url(../fonts/noto-regular.ttf) format("truetype");
+}
+
+@font-face {
+    /* NOTOSAN 500*/
+    font-family: NotoSan;
+    font-style: nomal;
+    font-weight: 500;
+    src: url(../fonts/noto_medium.woff) format("woff"),
+        url(../fonts/noto_mediumr.ttf) format("truetype");
+}
+
+@font-face {
+    /* NOTOSAN 700 볼드*/
+    font-family: NotoSan;
+    font-style: nomal;
+    font-weight: 700;
+    src: url(../fonts/noto_bold.woff) format("woff"),
+        url(../fonts/noto_bold.ttf) format("truetype");
+}
+
+@font-face {
+    /* NOTOSAN 900 블랙*/
+    font-family: NotoSan;
+    font-style: nomal;
+    font-weight: 900;
+    src: url(../fonts/noto_black.woff) format("woff"),
+        url(../fonts/noto_black.ttf) format("truetype");
+}
+
+/*
+[ 웹폰트지정형식 ]
+@font-face {
+    font-family: 내가지은이름;
+    src: url(경로.woff) format("woff"),
+        url(경로.ttf) format("truetype")
+}
+- woff 는 데스크탑 브라우저용 웹폰트 확장자
+- ttf 는 모바일 브라우저용 웹폰트 확장자
+- format(형식명) 은 명시적으로 확장자를 지정하여 웹폰트 로딩을 빠르게함!
+
+*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+/*공통*/
+body {
+    font-family: NotoSan;
+    overflow: hidden;/*스크롤없앰*/
+}
+
+
+.clb::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+/*IR(Image Replacement) class*/
+.ir {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}

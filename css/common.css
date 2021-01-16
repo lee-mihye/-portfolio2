@@ -1,0 +1,292 @@
+@charset "utf-8";
+/* common.css - 공통 레이아웃 디자인 */
+
+/******************************************헤더영역*****************************************/
+/*헤더영역*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 180px;
+    background-color: #d50513;
+    z-index: 999;
+    transition: all .3s ease-out;
+/*    display: none;*/
+}
+
+.header .logo {
+    width: 100px;
+    margin: 20px auto 0 auto;
+    transition: all .3s ease-out;
+
+}
+
+.header .logo img:last-child {
+    display: none;
+}
+
+.ham {
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sns {
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sns li {
+    float: left;
+    width: 40px;
+}
+
+.sns_youtube {
+    margin-left: 5px;
+}
+
+.gnb {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    text-align: center;
+}
+
+.gnb li {
+    float: left;
+    width: 33.33%;
+}
+
+.gnb li a {
+    position: relative;
+    height: 45px;
+    color: #fff;
+    display: block;
+    font-family: NotoSan;
+}
+
+.gnb li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /*정중앙이동*/
+    bottom: 1px;
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    transition: all .3s ease-in;
+}
+
+.gnb li a:hover::after {
+    width: 70%;
+}
+
+
+
+/**************슬림상단영역******************/
+.header.on {
+    height: 58px;
+}
+
+.header.on .logo {
+    margin: 10px 0 0 50px;
+}
+
+.header.on .logo img {
+    /*width: 100%;*/
+}
+
+
+.header.on .logo img:first-child {
+    display: none;
+}
+
+.header.on .logo img:last-child {
+    display: inline;
+}
+
+.header.on .ham {
+    left: auto;
+    right: 50px;
+}
+
+.header.on .sns {
+    right: 100px;
+}
+
+
+.header.on .gnb {
+    height: 58px;
+    margin: 0;
+}
+
+
+.header.on .gnb li a {
+    height: 58px;
+    line-height: 58px;
+}
+
+
+/******************************************푸터영역******************************************/
+/*푸터영역*/
+.footer.page {
+    width: 100%;
+    height: 170px;
+}
+
+.footer {
+    box-sizing: border-box;
+    background-color: #d50513;
+    padding: 35px 4%;
+}
+
+.flogo1 {
+    display: block;
+    float: left;
+}
+
+.flogo2 {
+    display: none;
+}
+
+.foot_text {
+    float: left;
+    color: #fff;
+    font-size: 0.8125rem;
+    font-weight: 200;
+    margin-left: 35px;
+    letter-spacing: -0.5px;
+}
+
+
+.foot_text1 li {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.foot_text1 li:nth-child(1) {
+    margin-right: 30px;
+}
+
+.foot_text1 a {
+    color: #fff;
+    font-weight: 500;
+    display: block;
+}
+
+.foot_text3 {
+    margin-top: 10px;
+}
+
+.foot_right {
+    float: right;
+}
+
+/*페밀리사이트*/
+#fsite {
+    float: right;
+    width: 200px;
+    height: 30px;
+    border: 0;
+    font-size: 0.8125rem;
+}
+
+
+
+
+
+
+/******************************************햄버거메뉴 팝업******************************************/
+/*햄버거메뉴 팝업*/
+.popup {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d50513;
+    z-index: 9999;
+    display: none;
+
+}
+
+.ham_popup {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /*    background-color: #000;*/
+}
+
+.closebtn {
+    position: absolute;
+    left: 9%;
+    top: 8%;
+    cursor: pointer;
+
+}
+
+.ham_popup ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ham_popup li {
+    height: 150px;
+    text-align: center;
+}
+
+.ham_popup li a {
+    color: #fff;
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.ham_popup_img {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+
+.ham_popup_img > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+}
+
+
+.ham_popup_img > .ham_img1 {
+    background-image: url(../images/ham_sub.jpg);
+    opacity: 1;
+}
+
+.ham_img2 {
+    background-image: url(../images/ham_history.jpg);
+}
+
+.ham_img3 {
+    background-image: url(../images/ham_ceo2.jpg);
+}
+
+.ham_img4 {
+    background-image: url(../images/ham_global.jpg);
+}

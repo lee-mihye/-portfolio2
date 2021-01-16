@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* subpage.css - sub page 공통사항 */
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+@import url(mediaQuery.css);
+
+
+
+/**************** 배너영역 ****************/
+.page {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+}
+
+.subpage_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 210px;
+    text-align: center;
+}
+
+/*서브페이지 배너 텍스트*/
+.subpage_text1 {
+    width: 100%;
+    background-color: #d50513;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.subpage_text2 {
+    font-size: 3.125rem;
+    font-weight: 500;
+}
+
+
+
+.sub_inbox{
+    width: 71.875%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*중간 텍스트*/
+.subpage_mtext {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 83px;
+}
+
+.subpg_mtext1 {
+    font-size: 2rem;
+}
+
+.subpg_mtext2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.subpg_mtext2 span {
+    color: #d50513;
+}
+
+.subpg_mtext3 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: right;
+    padding-top: 20px;
+    color: #505050;
+}
+
+
+
+
+
+
+
+
+
+
+
+

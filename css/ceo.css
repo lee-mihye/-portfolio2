@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* ceo.css - sub page ceo */
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+@import url(subpage.css);
+
+.page {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*body의 100%기준*/
+    overflow: hidden;
+}
+
+/**************** 배너영역 ****************/
+.subpage_img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../images/ceo_ban.jpg) no-repeat center/cover;
+}
+
+
+/*백종원 중간에 사진*/
+.ceo_baek {
+    width: 100%;
+    height: 83%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ceo_beak_imglist {
+    display: flex;
+}
+
+.ceo_baek_img > img {
+    max-width: 100%;
+}
+
+.ceo_img_space {
+    width: 2%;
+    height: 100%;
+}
+
+
+.ceo_baek_txt {
+    line-height: 1.7;
+    margin-right: 3%;
+    font-size: 1.125rem;
+
+}
+
+.ceo_baek_img > img {
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+}
+
+
+/*addclass 클래스 넣기*/
+.ceo_img1.active {
+    animation: ceo_ani .5s ease-in-out .6s forwards;
+    transition: opacity .4s ease-in-out;
+}
+
+.ceo_img2.active {
+    animation: ceo_ani .5s ease-in-out 1.1s forwards;
+    transition: opacity .4s ease-in-out;
+}
+
+/*키프레임*/
+@keyframes ceo_ani {
+    from {
+        opacity: 0;
+        transition: opacity .4s ease-in-out;
+    }
+    to {
+        opacity: 1;
+        transition: opacity .4s ease-in-out;
+    }
+}/*키프레임 끝*/
+
+
+
+/*3page CEO글*/
+.ceo_intro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ceo_intro_txt {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-left: 5%;
+    height: 64%;
+}
+
+.intro_img img {
+    max-width: 100%;
+}

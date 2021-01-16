@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* mediaQuery.css - 미디어쿼리 CSS */
+
+
+/*미디어쿼리 - 1024부터 915px 변경*/
+@media only screen and (max-width:1024px) {
+
+    /*대표브랜드 hover시 박스*/
+    .cont_txt big {
+        display: block;
+        margin-bottom: 20%;
+        font-size: 3vw;
+    }
+
+    .cont_txt small {
+        font-size: 1.6vw;
+        line-height: 1.6;
+    }
+
+    .abtn {
+        width: 3%;
+    }
+}
+
+/*1024-915 미디어쿼리 끝*/
+
+
+
+
+
+/*미디어쿼리 - 914px부터 800px까지 변경*/
+@media only screen and (max-width:915px) {
+
+    /*글자크기변경 - rem단위는 모두 변경됨!*/
+    html {
+        font-size: 14px;
+    }
+
+    /*헤더영역*/
+    .header {
+        height: auto;
+    }
+
+    .header .logo {
+        margin: 10px auto;
+    }
+
+    .header.on .logo {
+        width: 150px;
+        margin: 10px auto;
+    }
+
+    .header.on .sns {
+        display: none;
+    }
+
+    .gnb {
+        display: none;
+    }
+
+    .header.on .ham {
+        left: 4%;
+    }
+
+
+
+    /*창업영역*/
+    .redbtn {
+        width: 110px;
+    }
+
+    .space {
+        margin-bottom: 3%;
+    }
+
+
+    /*푸터영역*/
+    .flogo1 {
+        display: none;
+    }
+
+    .flogo2 {
+        display: block;
+        width: 110px;
+        margin: 0 auto 10px;
+    }
+
+    .foot_text {
+        margin-left: 0;
+    }
+
+    #fsite {
+        float: none;
+    }
+
+}
+
+/*914-800미디어쿼리 끝*/
+
+
+/*미디어쿼리 - 799px부터 695px까지 변경*/
+@media only screen and (max-width:800px) {
+
+    /*대표브랜드 hover시 박스*/
+    .cont_txt big {
+        display: block;
+        margin-bottom: 20%;
+        font-size: 3.6vw;
+    }
+
+    .cont_txt small {
+        font-size: 2vw;
+        line-height: 1.6;
+    }
+
+
+
+}
+
+/*799-695 미디어쿼리 끝*/
+
+
+
+
+/*미디어쿼리 - 694px부터 변경*/
+@media only screen and (max-width:695px) {
+
+    /*글자크기변경 - rem단위는 모두 변경됨!*/
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        overflow: auto;
+    }
+
+    .page {
+
+        overflow: auto;
+    }
+
+    body .cont2 {
+        height: auto;
+    }
+
+    .sns {
+        display: none;
+    }
+
+    .abtn {
+        width: 6%;
+    }
+
+    /*대표브랜드 hover시 박스*/
+    .cont_txt big {
+        display: block;
+        margin-bottom: 20%;
+        font-size: 4.8vw;
+    }
+
+    .cont_txt small {
+        font-size: 2.8vw;
+        line-height: 1.6;
+    }
+
+    /*서브페이지*/
+    .subpage_img > .subpage_text {
+        width: 160px;
+    }
+
+
+    .subpage_mtext_L > .subpg_mtext1 {
+        font-size: 18px;
+    }
+
+    .subpage_mtext_L > .subpg_mtext2 {
+        font-size: 29px;
+    }
+
+    .subpage_mtext_R > .subpg_mtext3 {
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    /*CEO 서브페이지*/
+    .sub_inbox > .subpage_mtext {
+        display: block;
+    }
+
+    .ceo_baek {
+        display: block;
+    }
+
+    .ceo_baek_txt {
+        line-height: 2;
+        text-align: center;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    .ceo_intro{display: block;}
+
+    /*창업영역*/
+    .startup_wrap > div {
+        float: none;
+        width: 100%;
+    }
+
+    .cont2 .title {
+        margin-top: 50px;
+    }
+
+    .startup_wrap {
+        margin-top: 130px;
+    }
+
+    .redbtn {
+        margin-top: 0;
+    }
+
+
+
+
+    /*푸터영역*/
+    .footer.page {
+        height: 220px;
+        text-align: center;
+        padding: 20px 4%;
+    }
+
+    .foot_text {
+        float: none;
+    }
+
+    .foot_right {
+        float: none;
+    }
+
+    .foot_text1 {
+        display: inline-block;
+    }
+
+    .foot_text3 {
+        margin-top: 5px;
+    }
+
+    .flogo2 {
+        width: 100px;
+        margin: 13px auto 13px;
+    }
+
+    #fsite {
+        width: 150px;
+    }
+
+    /*햄버거 팝업*/
+
+    .header.on .ham {
+        right: auto;
+    }
+
+    .ham_popup {
+        width: 100%;
+    }
+
+    .ham_popup_img {
+        display: none;
+    }
+
+    .ham_popup li {
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+
+
+
+}
+
+/*694미디어쿼리 끝*/

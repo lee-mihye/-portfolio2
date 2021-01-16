@@ -1,0 +1,403 @@
+@charset "utf-8";
+/* main.css - 메인페이지 CSS */
+
+/*파일 merging(합치기)*/
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+
+
+
+
+/*개별 페이지 디자인*/
+.page {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*body의 100%기준*/
+    overflow: hidden;
+}
+
+/*배너영역*/
+.ban {
+    overflow: hidden;
+}
+
+.ban_list {
+    height: 100%;
+    width: 300%;
+    left: 0%;
+    position: relative;
+}
+
+.banimg {
+    position: relative;
+    /*ban 텍스트의 부모*/
+    width: 33.3333%;
+    /*300%의 33.333%*/
+    height: 100%;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.ban1 {
+    background-image: url(../images/ban_1.jpg);
+}
+
+.ban2 {
+    background-image: url(../images/ban_2.jpg);
+}
+
+.ban3 {
+    background-image: url(../images/ban_3.jpg);
+}
+
+.text_inbox{
+    width: 71.875%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.ban_text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    /* 1920px : 100% = 270px : ? */
+    /* (100% * 270px) / 1920px = 14.0625 */
+    transform: translateY(-50%);
+    line-height: 1.2;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.ban_text li:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.ban_text li:nth-child(2) {
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+
+.ban_text li:nth-child(3) {
+    font-size: 1.25rem;
+    margin-top: 30px;
+}
+
+
+
+
+/*브랜드 영역*/
+.cont1 {
+    background-color: #202020;
+    position: relative;
+}
+
+
+.title {
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top: 10%;
+}
+
+.title h2 {
+    font-size: 1.875rem;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.brand_wrap {
+    position: relative;
+    width: 100%;
+    height: 90%;
+}
+
+.brand_box {
+    height: 80%;
+    width: 1615px;
+    max-width: 80%;
+    top: 10%;
+}
+
+.brand_list {
+    width: 400%;
+    height: 100%;
+    /*    display: flex;*/
+}
+
+.brand_list li {
+    width: 6%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    margin-right: 0.35%;
+    overflow: hidden;
+}
+
+/*
+.brand_list li:last-child {
+    margin: 0;
+}
+*/
+
+/*스와이퍼용 셋팅*/
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand1 {
+    background-image: url(../images/brand1.jpg);
+}
+
+.brand2 {
+    background-image: url(../images/brand2.jpg);
+}
+
+.brand3 {
+    background-image: url(../images/brand3.jpg);
+}
+
+.brand4 {
+    background-image: url(../images/brand4.jpg);
+}
+
+.brand5 {
+    background-image: url(../images/brand5.jpg);
+}
+
+.brand6 {
+    background-image: url(../images/brand6.jpg);
+}
+
+.brand7 {
+    background-image: url(../images/brand7.jpg);
+}
+
+.brand8 {
+    background-image: url(../images/brand8.jpg);
+}
+
+.brand9 {
+    background-image: url(../images/brand9.jpg);
+}
+
+.brand10 {
+    background-image: url(../images/brand10.jpg);
+}
+
+.brand11 {
+    background-image: url(../images/brand11.jpg);
+}
+
+.brand12 {
+    background-image: url(../images/brand12.jpg);
+}
+
+.brand13 {
+    background-image: url(../images/brand13.jpg);
+}
+
+.brand14 {
+    background-image: url(../images/brand14.jpg);
+}
+
+
+
+/*hover시 검정 텍스트박스*/
+.cont_txt {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 81%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    /*처음엔 숨기기*/
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.cont_txt:hover {
+    opacity: 1;
+}
+
+.cont_tlist {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cont_txt big {
+    display: block;
+    margin-bottom: 20%;
+    font-size: 2vw;
+}
+
+.cont_txt small {
+    font-size: 1.2vw;
+    line-height: 1.6;
+}
+
+
+/*블릿버튼*/
+.abtn {
+    position: absolute;
+    top: 54%;
+    transform: translateY(-54%);
+    width: 2%;
+}
+
+.abtn img {
+    width: 100%;
+}
+
+.lb {
+    left: 4%;
+}
+
+.rb {
+    right: 4%;
+}
+
+
+
+
+/*창업영역*/
+.cont2 {
+    background-color: #fff;
+}
+
+.cont2 .title h2 {
+    color: #222;
+}
+
+.startup_wrap {
+    position: relative;
+    top: 10%;
+    width: 71.875%;
+    height: 80%;
+    max-height: 80%;
+    margin: 0 auto;
+}
+
+
+label{
+    font-size: 1.125rem;
+}
+
+
+.startup_wrap > div {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.startup_wrap > div ul {
+    width: 100%;
+    height: 100%;
+    font: 500 1.125rem "NotoSan";
+}
+
+.startup_wrap > div ul li {
+    padding-bottom: 10px;
+}
+
+.nth1 {
+    margin-bottom: 20px;
+}
+
+.space {
+    margin-bottom: 5%;
+}
+
+
+
+.startup_l input[type=text] {
+    width: 190px;
+    height: 40px;
+}
+
+/*셀렉트박스 옵션*/
+.startup_l select {
+    width: 198px;
+    height: 45px;
+    font-size: 0.9375rem;
+}
+
+.startup_l select#seleml {
+    width: 120px;
+    height: 46px;
+    vertical-align: -1px;
+    /*인라인요소간 세로정렬*/
+}
+
+
+
+
+
+
+/*오른쪽 영역*/
+/*
+~(틸드) 2번 li뒤의 모든 형제 li선택
+*/
+.startup_R li:nth-child(2) ~ li {
+    text-align: right;
+}
+
+.startup_R textarea {
+    margin-top: 7px;
+    width: 99.2%;
+    height: 337px;
+}
+
+/*약관동의버튼*/
+.terms {
+    background-color: #202020;
+    color: #fff;
+    border: 0;
+    width: 75px;
+    height: 25px;
+    margin-left: 30px;
+    font: 500 1rem "NotoSan";
+}
+
+.redbtn {
+    width: 150px;
+    height: 60px;
+    background-color: #d50513;
+    color: #fff;
+    font: 500 1.0625rem "NotoSan";
+    border: 0;
+    margin-top: 13%;
+    cursor: pointer;
+}
+
+/*취소 버튼*/
+.cancel {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+

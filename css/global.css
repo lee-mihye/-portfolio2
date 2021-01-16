@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* global.css - sub page global */
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+@import url(mediaQuery.css);
+@import url(subpage.css);
+
+/*공통*/
+body {
+    overflow: hidden;
+    /*스크롤없앰*/
+}
+.page {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*body의 100%기준*/
+    overflow: hidden;
+}
+area:focus {
+    outline: none;
+}
+
+/**************** 배너영역 ****************/
+
+.subpage_img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../images/global_ban.jpg) no-repeat center/cover;
+}
+
+.subpage_text2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+
+
+/*갤러리 초기값 처음에 숨기기*/
+.gbox {
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    
+}
+
+.gbox li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 79px;
+}
+/*
+
+.gbox li:nth-child(1) {
+    background-color: #5683ff;
+}
+
+.gbox li:nth-child(2) {
+    background-color: #ff56f2;
+}
+
+.gbox li:nth-child(3) {
+    background-color: #ffec56;
+}
+*/
+
+
+/*지도 */
+.globalmap {
+    margin-top: 3%;
+}
+
+.globalmap img {
+    max-width: 100%;
+}
+
+
+.page.global_3 {
+    height: auto;
+}
+
+
+/*스와이퍼*/
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-top,
+.gallery-top2,
+.gallery-top3 {
+    height: 70%;
+    width: 100%;
+}
+
+.gallery-thumbs,
+.gallery-thumbs2,
+.gallery-thumbs3 {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
