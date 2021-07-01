@@ -20,12 +20,13 @@ var mwsts = 0; // (0-허용, 1-불허용)
 /// 스와이퍼 미디어쿼리 ///
 var mob = 0;
 if ($(window).width() < 1025) mob = 1;
-if ($(window).width() < 800) mob = 2;
+if ($(window).width() < 1000) mob = 2;
 if ($(window).width() < 695) mob = 3;
 console.log("모바일:" + mob);
 
 /// 모바일상태(mob===2)일때 마우스휠 불허용상태 변경
 if (mob === 3) mwsts = 1;
+if (mob === 2) mwsts = 1;
 
 console.log("마우스휠허용상태:" + mwsts);
 
