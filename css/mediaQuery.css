@@ -4,6 +4,9 @@
 
 /*미디어쿼리 - 1024부터 915px 변경*/
 @media only screen and (max-width:1024px) {
+    body {
+        overflow: auto;
+    }
 
     /*대표브랜드 hover시 박스*/
     .cont_txt big {
